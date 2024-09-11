@@ -1,0 +1,960 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.header{
+    position: fixed;
+    width: 100%;
+    display: inline;
+    overflow: auto;
+    background-color: #01131c;
+    opacity: 0.8;
+    z-index: 10;
+    
+}
+.LOGO{
+    width: 174px;
+    float: left;
+    margin: 0px 50px;
+}
+.menu{
+    float: right;
+    list-style-type: none;
+    margin: 20px 150px;
+}
+.menu li {
+    display: inline-block;
+}
+.menu li a{
+    text-decoration:none ;
+    font-size: 16px;
+    margin: 0px 10px;
+    color: rgb(194, 194, 212);
+    font-weight: 700;
+}
+.menu li a:hover {
+    color: white;
+}
+.HeroImage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/HeroImage2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Overlay{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(24, 28, 88, 0.582);
+
+}
+.content{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.title1{
+    color: white;
+    font-size: 64px;
+    text-transform: capitalize;
+}
+.text1{
+    color: white;
+    margin: 20px;
+    font-size: 24;
+    text-transform: capitalize;
+}
+.btn {
+    margin: 0px 10px;
+    padding: 15px 35px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+}
+.btn2{
+    color: white;
+    background-color: #021722;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+/*--------------------------------------------------*/
+.section2{
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    position: relative;
+}
+.section2Title{
+    font-size: 36px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container{
+    height:40vh;
+}
+.WhatWeDoSection{
+    float: left;
+    border: 1px solid gray;
+    width: 30%;
+    height: 100%;
+    position: relative;
+
+}
+.small{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    float: left;
+    text-align: center;
+}
+i{
+    font-size: 32px;
+    color: #2e91c2;
+    margin: 20px 0px;
+}
+.SmallTitle{
+    text-transform:capitalize;
+    margin: 20px 0px;
+}
+.text2{
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.small li{
+    margin: 20px 0px;
+    list-style: none;
+    
+}
+.small li a{
+    text-decoration: none; 
+    text-transform: capitalize; 
+    color: #2e91c2;
+}
+.e-commerce{
+    margin:0px 5%;
+}
+.WhatWeDoSection::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color:#03273a;
+    transition: 0.5s;
+
+}
+.WhatWeDoSection:hover::before {
+    width: 100%;
+    height: 100%;
+}
+.WhatWeDoSection:hover .SmallTitle{
+    color: white;
+}
+.WhatWeDoSection:hover .text2{
+    color: white;
+}
+/*----------------------------------------------------------------------------------------------*/
+.FromPortfolio{
+    width: 100%;
+    height: 1100px;
+    align-items: center;
+    text-align: center;
+    background-color: #a9c8d8;
+}
+.PortfolioBigTitle{
+    font-weight: 600;
+    font-size: 34px;
+    padding-top: 40px;
+    margin: 40px 0px;
+}
+.PortfolioContainer{
+    width: 100%;
+    margin: auto;
+    
+}
+.PortfolioContent{
+    width: 80%;
+    margin: auto;
+}
+.Items{
+    
+    float: left;
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    position: relative;
+    overflow: auto;
+    position: relative;
+}
+.Imgs{
+    width: 100%;
+}
+.printer{
+    background-image: url(../images/Printer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Dryer{
+    background-image:url(../images/HairDryer.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px 5%;
+}
+.wardrobe{
+    background-image: url(../images/wardrobe\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5% 5%;
+}
+.Charger{
+    background-image: url(../images/MobileCharger.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5% 0px;
+}
+.coffeeMaker{
+    background-image: url(../images/CoffeMaker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5% 0px;
+}
+.speaker{
+    background-image: url(../images/speaker.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.PortfolioOverlay{
+    background-color: #03273ab0;
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0 ; 
+    transition: 1s ;    
+}
+.PortfolioText{
+    text-align: center;
+    text-transform: capitalize;
+}
+.ItemsHead{
+    margin-top: 25%;
+    color: white;
+    font-size: 28px;
+    position: relative;
+    top: 0;
+    visibility: hidden;
+    opacity: 0 ; 
+    transition: top 0.6s ;    
+    transition-delay: 0.2s;
+}
+.ItemsText{
+    margin:20px 0px;
+    font-size: 18px;
+    color:rgb(169, 191, 211);
+    position: relative;
+    top: 0;
+    visibility: hidden;
+    opacity: 0 ; 
+    transition: 0.6s ;    
+    transition-delay: 0.4s;
+}
+.PortfolioText i{
+    background-color:white;
+    color:#1072a7;
+    font-size: 40px;
+    padding: 5px;
+    position: relative;
+    top: 0;
+    visibility: hidden;
+    opacity: 0 ; 
+    transition: 0.6s ; 
+    transition-delay: 0.6s;
+}
+.zz{
+    margin-left: 20px;
+}
+.Items:hover .PortfolioOverlay{
+    visibility: visible;
+    opacity: 1 ;
+}
+.Items:hover .ItemsHead {
+    visibility: visible;
+    top: -10px;
+    opacity: 1 ;
+  }
+.Items:hover .ItemsText {
+    visibility: visible;
+    top: -10px;
+    opacity: 1 ;
+  }
+.Items:hover .PortfolioText i {
+    visibility: visible;
+    top: -10px;
+    opacity: 1 ;
+  }
+  /*-----------------------------------------------------*/
+
+.section3{
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    position: relative;
+}
+.section3Title{
+    font-size: 36px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container2{
+    height:30vh;
+}
+.SolutionsSection{
+    float: left;
+    border: 1px solid gray;
+    width: 30%;
+    height: 100%;
+    position: relative;
+
+}
+.SolutionText{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    float: left;
+    text-align: left;
+    padding-left: 20px;
+}
+.Software{
+    margin:0px 5%;
+}
+.financial{
+    margin:5% 0px ;
+}
+.Software2{
+    margin-top:5%;
+    margin-bottom:5%;   
+}
+.Industrial{
+    margin:5% 0px ;
+}
+.SolutionTextTitle{
+    float: left;
+    margin-top: 25px;
+    padding-left: 20px;
+}
+.SolutionText i{
+    float: left;
+    display: inline;
+}
+.SolutionP{
+    float: left;
+    display: block;
+    margin-top: 5px;
+    padding-left: 60px;
+    padding-right: 40px;
+    line-height: 25px; 
+    color: gray;
+}
+.SolutionsSection::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:#03273a;
+    transition: 0.5s;
+}
+.SolutionsSection:hover::before {
+    width: 100%;
+    height: 100%;
+}
+.SolutionsSection:hover .SolutionTextTitle{
+    color: white;
+}
+.SolutionsSection:hover .SolutionP{
+    color: rgb(189, 187, 187);
+}
+/*-------------------------------------------------*/
+.Section4{
+    width: 100%;
+    margin: auto;
+    margin-top: 10%;
+    padding-bottom: 50px;
+    background-color: #ddebf3;
+    position: relative;
+    
+}
+.Section4Head{
+    display: inline-block;
+    font-size: 20px;
+    margin: 25px;
+    
+}
+.Section4Text{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 200;
+    font-size: 18px;
+    color: gray;
+}
+.Section4Container{
+    width: 80%;
+    margin: auto;
+    margin-top: 30%;
+    overflow: auto;
+}
+.Section4Content{
+    float: left;
+    width: 60%;
+    align-items: center;
+    
+}
+.Section4Content i{
+    float: left;
+}
+.Icons{
+    position: relative;
+    margin-top: 50px;
+}
+.i1 ,.i2 ,.i3 ,.i4{
+    position: absolute;
+    margin: 20px;
+}
+.Points{
+    display: inline-block;
+    font-weight: 300;
+    font-size: 18px;
+    color: gray;
+    margin-left: 70px;
+    margin-top: 28px;
+}
+
+.Icon1 ,.Icon2 ,.Icon3 ,.Icon4{
+    width: 100%;
+    height: 60px;
+}
+.ImgContainer{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.Img4{
+    width: 400px;
+    height: 400px;
+}
+.Circle{
+    color: #1072a7;
+    position: absolute;
+    font-size: 30px;
+    top: 500px;
+}
+.C2{
+    color: gray;
+    margin-left: 50px;
+}
+.C3{
+    color: gray;
+    margin-left: 100px;
+}
+.C2:hover{
+    color:#1072a7;
+}
+.C3:hover{
+    color:#1072a7;
+}
+/*--------------------------------------------------*/
+.Section5Container{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-image:url(../images/HeroImage1.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.Section5Overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #070707be;
+}
+.Section5Content{
+    width: 80%;
+    margin: auto;
+}
+.Content1{
+    float: left;
+    width: 30%;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.NumberItems{
+    overflow: hidden;
+    padding-top: 100px;
+
+}
+.con2,.con3{
+    margin-left: 5%;
+}
+.Content1 i{
+    font-size: 40px;
+    color: #75b6d8;
+}
+.Content1 h2{
+    font-size: 40px;
+    margin: 10px;
+}
+.Content1 span{
+    font-size: 20px;
+    margin: 10px;
+}
+
+/*---------------------------------------------------*/
+
+.Section6{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color:#ddebf3;
+
+}
+.section6Head{
+    text-align: center ;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.container6{
+    background-color: #03273a;
+    width: 80%;
+    margin: auto;
+}
+.container680{
+    width: 100%;
+}
+.Prices{
+    float: left;
+    width: 30%;
+    border:1px solid gray;
+    text-align: center;
+    position: relative;
+}
+.Center,.Last{
+    margin-left: 5%;
+}
+.SmallTitle6{
+    margin: 30px;
+    transition: 1s;
+}
+.PricesSmall{
+    border: 2px solid #1489c9;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+.PricesSmall .dollar{
+    margin-top: 30px;
+    font-size: 30px;
+    transition: 1s;
+}
+.PricesSmall .month{
+    color: gray;
+}
+.Prices .text6{
+    width: 200px;
+    margin:auto ;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: gray;
+}
+.Prices button{
+    width :150px;
+    height: 50px;
+    margin-bottom: 30px;
+    border: 2px solid #1489c9;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.Prices:hover .dollar{
+    color: red;
+    opacity: 1;
+
+}
+.Prices:hover .SmallTitle6{
+    color: red;
+    opacity: 1;
+
+}
+.Prices::after{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: black;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.Prices:hover::after{
+    width: 100%;
+    height: 100%;
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+.Section7Container{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/Section7background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.Section7Overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #02172283;
+}
+.Section7Content{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-top: 30px;
+}
+.Items7{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    
+}
+.Item7Main{
+    float: left;
+    width: 40%;
+    height: 50%;
+    margin-left: 5%;
+}
+.Content7{
+    width: 100%;
+    height: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Icon7{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(../images/Target.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.Icon72{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(../images/Correct.png);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    border-radius: 50%;
+    background-color:white;
+
+}
+.Content7 h2{
+    color: white;
+    margin-bottom: 10px;
+    
+}
+.Content7 span{
+    color: rgb(0, 225, 255);
+}
+.Item7Main p{
+    color: white;
+    margin-left: 30px;
+    line-height: 25px;
+}
+/*------------------------------------------------------------------------------------*/
+.Section8{
+    width: 100%;
+    height: 100vh;  
+}
+.Section8Header{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0px;
+}
+.Section8Header h2{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.Section8Container{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    position: relative;
+}
+.Section8Content{
+    position: absolute;
+    width: 100%;
+}
+.TeamItem{
+    width: 30%;
+    float: left;
+    position: relative;
+    background-color:#a9c8d8;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+.TeamItem2,.TeamItem3{
+    margin-left: 5%;
+}
+.TeamImg{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.TeamOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(150, 148, 148, 0.603);
+    visibility: hidden;
+}
+.TeamOverlay a{
+    display: block;
+    width: 50px;
+    height: 60px;
+    background-color: #0b4485;
+    color: #fff;
+    margin-left: auto;
+    text-decoration: none;
+}
+.TeamOverlay i{
+    line-height: 40px;
+    color: rgb(197, 222, 243);
+}
+.TeamOverlay i:hover{
+    color: white;
+}
+.TeamItem:hover .TeamOverlay{
+    visibility: visible;
+}
+.TeamInfo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.TeamInfo h2{
+    margin-bottom: 10px;
+}
+.TeamInfo p{
+    color: gray;
+}
+.TeamItem:hover .TeamInfo h2{
+    color: white;
+}
+.TeamItem:hover .TeamInfo p{
+    color: blue;
+}
+.TeamItem::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #01131c;
+    transition: 1s;
+    opacity: 0;
+}
+.TeamItem:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+/*----------------------------------------------------------------------------------*/
+.Section9{
+    width: 100%;
+    height: 110vh;
+    margin-top: 150px;
+    background-color:#ddebf3;
+    overflow: auto;
+}
+.Section9Header{
+    font-size: 22px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.Section9Container{
+    width: 80%;
+    margin: auto;
+    background-color: #0b4485;
+}
+.Section9First{
+    float: left;
+    width: 30%;
+    height: 75%;
+    background-color:#ecf2f5;
+    position: relative;
+}
+
+.sectionCenter{
+    margin-left: 5%;
+}
+.sectionLast{
+    margin-left: 5%;
+}
+.sectionTop .Section9Img{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    margin-top: 20px;
+    background-image: url(../images/Blog1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionCenter .Section9Img{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    margin-top: 20px;
+    background-image: url(../images/Blog2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sectionLast .Section9Img{
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    margin-top: 20px;
+    background-image: url(../images/Blog3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Section9Info ul{
+    text-align: center;
+    list-style-type: none;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+.Section9Info ul li{
+    display: inline;
+    margin: 10px;
+}
+.Section9Info ul li i{
+    font-size: 15px;
+}
+.Section9Info h2{
+    font-size: 20px;
+    margin: 10px 30px;
+}
+.Section9Info p{
+    font-size: 15px;
+    margin: 10px 30px;
+}
+.Section9Info a{
+    margin: 10px 30px;
+    text-decoration: none;
+    color: #1072a7;
+}
+.Section9First::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #2e91c2;
+    opacity: 0;
+    transition: 0.5s;
+}
+.Section9First:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+/*----------------------------------------------------------------------------------*/
+
+.Footer{
+    width: 100%;
+    text-align: center;
+    background-color: #01131c;
+    overflow: auto;
+}
+.FooterLogo{
+    width: 25%;
+    height: 25%;
+    background-image: url(../images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    margin-top: 50px;
+}
+.Footer ul li{
+    display: inline;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.Footer ul li a i{
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    border-radius: 50%;
+    line-height: 50px;
+    background-color: white;
+    color:#75b7d8;
+    margin:auto ;
+    overflow: hidden;
+}
+.Footer p{
+    color: rgb(150, 148, 148);
+    margin: 30px 0px;
+}
+.Footer ul li a i:hover{
+    color:#3e99c7;
+}
